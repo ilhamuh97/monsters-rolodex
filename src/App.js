@@ -20,7 +20,7 @@ class App extends Component{
   //mounting is when react puts our component on the page, in renders the DOM for the first time
   componentDidMount(){
     //fetching all data on the page
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(respons=>respons.json())
     .then(users=>this.setState({monsters:users}));
   }
